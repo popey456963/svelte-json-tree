@@ -62,4 +62,4 @@
   }
 </script>
 
-<svelte:component this={componentType} {key} {value} {isParentExpanded} {isParentArray} {nodeType} {valueGetter} />
+<svelte:component this={componentType} {key} {value} isParentExpanded=true {isParentArray} {nodeType} {valueGetter} />
