@@ -2,7 +2,7 @@
   import JSONNested from './JSONNested.svelte';
 
   export let key, value, isParentExpanded, isParentArray, nodeType;
-  export let expanded = false;
+  export let expanded = true;
 
   $: keys = Object.getOwnPropertyNames(value);
 
