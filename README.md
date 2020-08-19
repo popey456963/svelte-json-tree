@@ -1,12 +1,14 @@
 # svelte-json-tree
 
-![version](https://img.shields.io/npm/v/svelte-json-tree?style=flat-square) ![MIT License](https://img.shields.io/npm/l/svelte-json-tree?style=flat-square)
+> This fork adds 'auto-expanding' objects.  By default:
+> - Objects are expanded
+> - Small arrays (<1024 characters) are expanded
+
+![version](https://img.shields.io/npm/v/svelte-json-tree-auto?style=flat-square) ![MIT License](https://img.shields.io/npm/l/svelte-json-tree-auto?style=flat-square)
 
 ![svelte-json-tree](./images/screenshot.png)
 
 Svelte JSON Viewer Component used in [Svelte REPL](https://svelte.dev/repl). Supports [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set), [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#iterable), [Symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol).
-
-[Try it out on repl](https://svelte.dev/repl/89867bd1acaa48b4b29e29d1fdfa1ddf?version=3.14.1).
 
 ## Install
 
@@ -14,10 +16,10 @@ Use [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en) to inst
 
 ```sh
 # npm
-npm install --save svelte-json-tree
+npm install --save svelte-json-tree-auto
 
 # yarn
-yarn add svelte-json-tree
+yarn add svelte-json-tree-auto
 ```
 
 ## Usage
@@ -26,7 +28,7 @@ With Svelte:
 
 ```html
 <script>
-  import JSONTree from 'svelte-json-tree';
+  import JSONTree from 'svelte-json-tree-auto';
   // your json data to view
   const value = {
     array: [1, 2, 3],
@@ -43,7 +45,7 @@ With Svelte:
 Without Svelte:
 
 ```js
-const JSONTree = require('svelte-json-tree');
+const JSONTree = require('svelte-json-tree-auto');
 const jsonTree = new JSONTree({
 	target: document.body,
 	props: {
@@ -89,4 +91,4 @@ To overwrite the style, specify the css variables on the parent:
 
 ## License
 
-[MIT](https://github.com/tanhauhau/svelte-json-tree/blob/master/LICENSE)
+[MIT](https://github.com/popey456963/svelte-json-tree/blob/master/LICENSE)

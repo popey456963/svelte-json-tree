@@ -1,10 +1,13 @@
 {
-  "name": "svelte-json-tree",
+  "name": "svelte-json-tree-auto",
   "version": "0.1.0",
   "description": "Svelte JSON Viewer Component",
   "main": "dist/index.js",
   "svelte": "src/Root.svelte",
-  "author": "Tan Li Hau <lhtan93@gmail.com>",
+  "author": "Alexander Craggs <github@femto.host>",
+  "contributors": [
+    "Tan Li Hau <lhtan93@gmail.com>"
+  ],
   "license": "MIT",
   "keywords": [
     "svelte",
@@ -15,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tanhauhau/svelte-json-tree.git"
+    "url": "https://github.com/popey456963/svelte-json-tree.git"
   },
   "scripts": {
     "build": "rollup -c",
